@@ -1,0 +1,19 @@
+{
+  "name": "skeleton",
+  "version": "0.0.1",
+  "description": "The landing page for website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icecreambash/skeleton_landing_women.git"
+  },
+  "author": "Kostylev Artem <kas@ained.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icecreambash/skeleton_landing_women/issues"
+  },
+  "homepage": "https://github.com/icecreambash/skeleton_landing_women#readme"
+}

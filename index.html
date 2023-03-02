@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!--    Google Fonts Start-->
+
+    <!--    Google Fonts End-->
+
+    <!--    UIKit Bundle Start-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.3/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.3/dist/js/uikit.min.js"defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.3/dist/js/uikit-icons.min.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--    UIKit Bundle End-->
+    <link rel="stylesheet" href="/res/app.css">
+    <title>LongWayUp</title>
+</head>
+<body>
+    <nav class="uk-navbar-container navbar_container">
+        <div class="uk-container uk-light" >
+            <div uk-navbar>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav navbar__items uk-visible@s">
+                        <li><a href="#">О проекте</a></li>
+                        <li><a href="#">Партнёры</a></li>
+                        <li><a href="#">География</a></li>
+                        <li><a href="#">Открыть клуб</a></li>
+                        <li><a href="#">Полезные материалы</a></li>
+                        <li><a href="#">Публикации</a></li>
+                    </ul>
+                    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <button class="uk-button uk-button-default button-orange uk-text-normal">Задать вопрос</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!--    Mobile Canvas-->
+    <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar mobile__navbar__canvas">
+            <ul class="uk-nav">
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Партнёры</a></li>
+                <li><a href="#">География</a></li>
+                <li><a href="#">Открыть клуб</a></li>
+                <li><a href="#">Полезные материалы</a></li>
+                <li><a href="#">Публикации</a></li>
+            </ul>
+        </div>
+    </div>
+<!--    Mobile Convas End-->
+    <nav class="uk-navbar-container navbar_sub_container">
+        <div class="uk-container">
+            <div uk-navbar>
+                <div class="uk-navbar-left" style="margin-right:20px">
+                    <ul class="uk-navbar-nav navbar_sub__items">
+                        <li><a href="#" uk-toggle="target: .carusel_sub_nav; animation: uk-animation-fade"><img class="popcorn_switch_button" src="res/popcorn/popcorn_button_switch.svg"/></a></li>
+                        <li><a href="#"><img src="res/popcorn/logo.svg"/></a></li>
+                    </ul>
+<!--                    <hr class="uk-divider-vertical navbar_sub_container__divider">-->
+                </div>
+                <div class="uk-navbar-left carusel_sub_nav navbar_sub__items__left_container">
+                    <ul  class="uk-navbar-nav navbar_sub__items">
+                        <li><a href="#"><h5>Женские клубы<br/>при ЦЗН</h5></a></li>
+                        <li class="uk-visible@s"><a href="#"><h6>Актуальный формат и технология развития<br/>трудового потенциала женщин</h6></a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-left carusel_sub_nav" hidden="hidden">
+                    <ul  class="uk-navbar-nav navbar_sub__items navbar_sub__items__left_container uk-visible@s">
+                        <li><a href="#"><h5>Женские клубы<br/>при ЦЗН</h5></a></li>
+                    </ul>
+<!--                    <hr class="uk-divider-vertical navbar_sub_container__divider">-->
+                    <ul  class="uk-navbar-nav navbar_sub__items navbar_sub__items__left_container uk-visible@s">
+                        <li><a href="#"><h5>Подростковый<br/>клуб</h5></a></li>
+                    </ul>
+<!--                    <hr class="uk-divider-vertical navbar_sub_container__divider">-->
+                    <ul  class="uk-navbar-nav navbar_sub__items navbar_sub__items__left_container uk-visible@s">
+                        <li><a href="#"><h5>Инклюзивная<br/>среда</h5></a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right" style="">
+                    <ul class="uk-navbar-nav navbar_sub__items navbar_sub__items__right_container uk-visible@s">
+                       <li>
+                           Узнайте подробнее о проекте
+                           <h3>+7 (495) 917-79-85</h3>
+                       </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="uk-container uk-container-expand somebody_container">
+        <div class="uk-container" style="margin-top: 100px">
+            <div uk-slideshow="animation: fade; autoplay:true; autoplay-interval:5000; draggable:false; pause-on-hover:false; min-height: 480; max-height: 480">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                    <ul class="uk-slideshow-items somebody_container__slider__ul" style="">
+                        <li>
+                            <img src="res/popcorn/women/Frame%2015.png" alt="" uk-cover class="somebody_container__slider__img">
+                            <div class="uk-position-left somebody_container__slider__img_preview uk-visible@s">
+                                <img src="res/popcorn/Intersect.svg" style="" >
+                            </div>
+                            <div class="uk-overlay uk-position-left  uk-position-center-left somebody_container__slider__content">
+                                <h1 class="uk-margin-remove uk-text-normal">
+                                    Повышение карьерной
+                                    </br>
+                                    грамотности и экономической
+                                </h1>
+                                <button class="uk-button uk-button-default button-orange uk-text-normal">Узнать подробнее</button>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="res/popcorn/women/Frame%2030.png" alt="" uk-cover class="somebody_container__slider__img">
+                            <div class="uk-position-left somebody_container__slider__img_preview uk-visible@s">
+                                <img src="res/popcorn/Intersect.svg"/>
+                            </div>
+                                <div class="uk-overlay uk-position-left  uk-position-center-left somebody_container__slider__content">
+                                    <h1 class="uk-margin-remove uk-text-normal">
+                                        Психологическая, социальная
+                                        </br>
+                                        и иная поддержка
+                                    </h1>
+                                    <button class="uk-button uk-button-default button-orange uk-text-normal">Узнать подробнее</button>
+                                </div>
+                        </li>
+                        <li>
+                            <img src="res/popcorn/women/Frame%2031.png" alt="" uk-cover class="somebody_container__slider__img">
+                            <div class="uk-position-left somebody_container__slider__img_preview uk-visible@s">
+                                <img src="res/popcorn/Intersect.svg"/>
+                            </div>
+                                <div class="uk-overlay uk-position-left  uk-position-center-left somebody_container__slider__content">
+                                    <h1 class="uk-margin-remove uk-text-normal">
+                                        Выявление и развитие талантов,
+                                        </br>
+                                        смореализация женщин
+                                    </h1>
+                                    <button class="uk-button uk-button-default button-orange uk-text-normal">Узнать подробнее</button>
+                                </div>
+                        </li>
+                        <li>
+                            <img src="res/popcorn/women/Frame%2032.png" alt="" uk-cover class="somebody_container__slider__img">
+                            <div class="uk-position-left somebody_container__slider__img_preview uk-visible@s">
+                                <img src="res/popcorn/Intersect.svg"/>
+                            </div>
+                                <div class="uk-overlay uk-position-left  uk-position-center-left somebody_container__slider__content">
+                                    <h1 class="uk-margin-remove uk-text-normal">
+                                        Генерация новых идей и их
+                                        <br/>
+                                        совместная реализация
+                                    </h1>
+                                    <button class="uk-button uk-button-default button-orange uk-text-normal">Узнать подробнее</button>
+                                </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
